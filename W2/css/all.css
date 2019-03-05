@@ -1,0 +1,241 @@
+
+h2,h1,a,p{
+    font-family: "Microsoft JhengHei"
+}
+
+
+.dropdown-menu a:hover{
+    color:red;
+}
+
+.pink{
+    background: pink;
+}
+
+.pokemon-box{
+    height: auto;
+}
+
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+/* reset */
+
+
+
+/* pokemon */
+.pokemon-box a:hover{
+    color:red;
+    text-decoration: none;
+}
+
+/* pokemon */
+
+
+
+/* tku60 */
+.tku60{
+    background: url("../W2/image/bg.png");
+}
+
+.tku60 a:hover{
+   background: #000;
+   color:yellow;
+}
+
+@media (max-width:768px){
+    .tku60 a{
+        height: 44px;
+        margin-bottom: 5px;
+        border-radius: 20px;
+    }
+}
+
+/* tku60 */
+
+
+/* tictactoe */
+.tictactoe td{
+    background: url("../W3/image/bg.png");
+}
+
+@media (max-width:768px){
+    .tictactoe a{
+        width: 100%;
+    }
+    .tictactoe a:hover{
+        background: black;
+        color:yellow;
+    }
+    .tictactoe .card{
+        margin: 5px auto;
+    }
+}
+
+
+/* tictactoe */
+
+
+
+/* blog */
+.post{   
+    border: 20px solid #bdc3c7;
+    margin: 20px auto;
+    width: 80%;
+    padding: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    max-width: 700px;
+    font-size: 16px;
+    background: black;
+    color:#fff;
+}
+
+.blog h2{
+    font-size: 2rem;
+}
+
+.blog .quote{
+    border-left: 5px solid #bdc3c7;
+    padding-left: 5px;
+}
+
+.blog .date{
+    color: #5096d3;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.blog hr{
+  border-top: 1px solid rgba(0,0,0,0.1);
+  border-bottom: 1px solid rgba(255,255,255,01);
+  
+}
+
+/* blog */
+
+
+/* imagescss */
+
+.img3{
+    width: 29%;
+    margin: 1.66%;  
+  }
+  
+  .img4{
+    width: 21%;
+    margin: 1.66%;  
+  }
+  
+  .img5{
+    width: 16%;
+    margin: 1.66%;  
+  }
+  
+@media (max-width:768px){
+    .img3{
+        width: 99%;
+        margin: 1.66%;
+    }
+
+    .img4{
+        width: 46%;
+        margin: 1.66%;
+    }
+
+    .img5{
+        width: 29%;
+        margin: 1.66%;
+    }
+}
+
+@media (max-width:569px){
+    .img3{
+        width: 99%;
+        margin: 1.66%;
+    }
+
+    .img4{
+        width: 99%;
+        margin: 1.66%;
+    }
+
+    .img5{
+        width: 99%;
+        margin: 1.66%;
+    }
+}
+
+/* imagescssw */
+
+
+/* petweb */
+
+
+
+.petweb_left a{
+    margin: 20px auto;
+    width: 50%;
+    display: block;
+    font-size: 16px;
+    border-radius: 50%;
+    font-weight: bold; 
+}
+
+.petweb_left a:hover{
+    background: #000000;
+    color:yellow;
+}
+
+@media (max-width:768px){
+    .petweb_left a{
+        width: 33.33333%;
+        float: left;
+    }
+}
+@media (max-width:569px){
+    .petweb_left a{
+        width: 80%;
+        float: left;
+        border-radius:0;
+        margin: 5px 40px;
+    }
+}
+
+
+
+
+.petweb_right{
+    background: url("../W6/images/bg_right.png");
+}
+
+
+.petweb_right h2{
+    font-weight: bold;
+}
+
+
+.petweb_right img{
+    border-radius: 30px;
+    margin: 5px;
+}
+
+.petweb_right .content{
+    height:auto;
+}
+
+.jumbotron{
+    background: url("../W6/images/jumbo_bg.jpg");
+}
+
+/* petweb */
+
+
+.inside img{
+    max-width: 100%;
+    height:auto;
+}
+
+
+
