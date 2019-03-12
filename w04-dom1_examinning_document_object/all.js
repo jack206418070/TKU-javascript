@@ -29,3 +29,42 @@ console.log(val)
 
 val = document.forms[0].action
 console.log(val)
+
+
+val = document.links
+console.log(val)
+
+val = document.links[0]
+console.log(val)
+
+val = document.links[0].className
+console.log(val)
+
+val = document.links[0].id
+console.log(val)
+
+val = document.links[0].href
+console.log(val)
+
+val = document.links[0].nodeName
+console.log(val)
+
+
+
+// val = document.images
+
+
+val = document.scripts
+console.log(val)
+
+val = document.scripts[1].src
+console.log(val)
+
+let scripts = document.scripts;
+
+let scriptsArr = Array.from(scripts)
+console.log(scriptsArr)
+
+scriptsArr.forEach(item =>{
+    console.log(item.getAttribute('src'))
+})
