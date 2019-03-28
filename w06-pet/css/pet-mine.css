@@ -1,0 +1,208 @@
+:root{
+    --mian-color:#DEC49C;
+    --font-color:#2E8A8A;
+    --font-style:Microsoft JhengHei;
+}
+
+
+ul{
+    list-style: none;
+}
+
+#home:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+#home{
+    margin-top: -20px;
+    height: auto;
+    background-color: #DEC49C;
+    /* padding: 10px; */
+}
+
+header{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+header h1{
+    color: var(--font-color);
+    font-family: var(--font-style);
+    font-weight: bold;
+    font-size: 50px;
+    margin-left: 50px;
+    float: left;
+}
+
+@media (max-width: 568px){
+    header h1{
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+header > ul{
+    float: right;
+}
+
+header > ul > li {
+    float: left;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 100px;
+    text-align: center;
+    background: #CFA36E;
+    border-radius: 20px;
+    margin-top: 10px;
+    border-bottom: 5px solid #DEC49C;
+}
+
+
+header > ul > li > a{
+    font-family: var(--font-style);
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    color: var(--font-color);
+    line-height: 50px;
+    text-decoration: none !important;    
+}
+
+@media (max-width: 568px){
+    header > ul > li{
+        width: 90%;
+        height: 44px;
+        margin: 5px 0;
+    }
+    header > ul > li > a{
+        line-height: 44px;
+    }
+}
+
+
+header > ul > li:hover{
+    border-bottom-color: #2E8A8A;
+}
+
+
+.swiper-container{
+    position: relative;
+    height: 410px;
+    width: 800px;
+}
+
+.swiper-pagination{
+    position: absolute;
+    bottom: 0;
+}
+
+#slide1{
+    background: url("http://lorempixel.com/output/animals-q-c-800-410-6.jpg");
+}
+#slide2{
+    background: url('http://lorempixel.com/output/animals-q-c-800-410-5.jpg');
+}
+#slide3{
+    background: url('http://lorempixel.com/output/animals-q-c-800-410-3.jpg');
+}
+
+@media (max-width: 568px){
+    .swiper-container{
+        height: 200px; 
+        width: 300px;
+        margin: 0 auto;
+    }
+    #slide1{
+        background: url('http://lorempixel.com/output/animals-q-c-300-200-6.jpg');
+    }
+    #slide2{
+        background: url('http://lorempixel.com/output/animals-q-c-300-200-5.jpg');
+    }
+    #slide3{
+        background: url('http://lorempixel.com/output/animals-q-c-300-200-3.jpg');
+    }
+}
+
+.newsBar{
+    height: auto;
+    margin: 20px 0;
+}
+
+.newsBar > h2{
+    font-size: 36px;
+    font-family: var(--font-style);
+    color: var(--font-color);
+    margin-left: 50px;
+}
+
+.newsBar ul{
+    margin: 20px 70px;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+}
+
+.newsBar li{
+    width: 100px;
+    height: 40px;
+    margin: 0 5px;
+    float: left;
+    font-family: var(--font-style);
+    color: var(--font-color);
+    border-radius: 20px;
+    background: #CFA36E;
+}
+
+.newsBar p{
+    padding: 20px;
+    color:#fff;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+
+.newsBar .datalist{
+    height: 400px;
+    width: 80%;
+    margin: 0 auto;
+    background: #000;
+    clear: both;
+}
+
+li:hover{
+    cursor: pointer;
+}
+
+li.active{
+    background: #000;
+    color:red;
+}
+
+@media (max-width: 568px){
+    .newsBar ul{
+        margin: 10px 0;
+        width: 100%;
+    }
+    .newsBar li{
+        width: 25%;
+    }
+}
+
+footer{
+    height: 80px;
+    background: #343A40;
+}
+
+footer p{
+    text-align: center;
+    color:#fff;
+    padding-top: 30px;
+}
