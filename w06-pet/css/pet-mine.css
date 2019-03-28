@@ -15,8 +15,16 @@ ul{
     background-color: #DEC49C;
     /* padding: 10px; */
 }
+.home:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: ".";
+    clear: both;
+    height: 0;
+}
 
-.clearfix:after {
+header:after {
     visibility: hidden;
     display: block;
     font-size: 0;
@@ -104,6 +112,7 @@ header > ul > li:hover{
     position: absolute;
     bottom: 0;
 }
+
 
 #slide1{
     background: url("http://lorempixel.com/output/animals-q-c-800-410-6.jpg");
@@ -269,6 +278,49 @@ footer p{
     display: inline;
     font-family: var(--font-style);
     font-weight: bold;
+}
+
+#redpen{
+    color:red;
+    font-size: 16px;
+    display: block;
+}
+
+.QAwrite .QAform{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.QAwrite input{
+    height: 30px;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.inputset{
+    width: 60%;
+    font-size: 20px;
+    font-family: var(--font-style);
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.inputset span{
+    color:red;
+}
+
+#sub{
+    width: 20% !important;
+    border-radius: 10px;
+    background-color: #CFA36E;
+    font-size: 16px;
+    color: black;
+    font-family: var(--font-style);
+    font-weight: bold;
+    margin-left: 70%;
+    display: block;
 }
 
 @media (max-width: 586px){

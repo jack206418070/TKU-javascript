@@ -44,7 +44,7 @@
 
 
         <div class="home">
-             <header class="clearfix">
+             <header>
                 <h1>寵物之家</h1>
                 <ul>
                     <li><a href="index.html">首頁</a></li>
@@ -78,6 +78,18 @@
 
                 <div class="QAwrite">
                         <i class="fas fa-user-edit"></i> <p>請留下您的問題</p>
+                        <p id="redpen">＊－為必填</p>
+                        <form class="QAform" action="#" methon="post">
+                            <div class="inputset">
+                                <label style="display: block; margin-left: 0; width: 30%;" for="name"><span>*</span>姓名: </label>
+                                <input type="text" id="name" name="name">
+                                <label style="display: block; margin-left: 0; width: 34%;" for="mail"><span>*</span>E-mail: </label>
+                                <input type="mail" id="mail" name="mail">
+                                <label style="display: block; margin-left: 0; width: 30%;" for="QandA"><span>*</span>問題: </label>
+                                <textarea name="QandA" id="QandA" cols="34" rows="7"></textarea>
+                                <input type="button" id="sub" value="送出">
+                            </div>
+                        </form>
                 </div>
             </div>
        
