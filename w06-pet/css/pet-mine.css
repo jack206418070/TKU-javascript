@@ -9,21 +9,22 @@ ul{
     list-style: none;
 }
 
-#home:after {
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0;
-}
-
-#home{
+.home{
     margin-top: -20px;
     height: auto;
     background-color: #DEC49C;
     /* padding: 10px; */
 }
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: ".";
+    clear: both;
+    height: 0;
+}
+
 
 header{
     margin-top: 20px;
@@ -181,7 +182,7 @@ li:hover{
     cursor: pointer;
 }
 
-li.active{
+li.js_active{
     background: #000;
     color:red;
 }
@@ -205,4 +206,77 @@ footer p{
     text-align: center;
     color:#fff;
     padding-top: 30px;
+}
+
+
+
+.QAbox{
+    height: auto;
+    width: 90%;
+    margin: 20px 0;
+    margin-left: 50px;
+    border: #2E8A8A solid 6px;
+    padding: 20px;
+    /* text-align: center; */
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 10px;
+    background: #2E8A8A;
+}
+
+.QAbox .logo{
+    padding: 10px;
+    font-size: 50px;
+}
+
+.QAbox .logo p{
+    font-size: 50px;
+    display: inline;
+}
+
+.QAlist{
+    height: auto;
+    background: gray;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.QAlist > ol > p{
+    margin: 0;
+    display: inline;
+    font-weight: bold;
+    color: darkkhaki
+}
+
+.QAlist ol{
+    margin-top: 10px;
+}
+.QAlist li{
+    margin: 15px 0 20px 0; 
+    font-family: var(--font-style);
+}
+
+.QAwrite{
+    height: auto;
+    text-align:center;
+    font-size: 30px;
+}
+
+.QAwrite p{
+    font-size: 30px;
+    display: inline;
+    font-family: var(--font-style);
+    font-weight: bold;
+}
+
+@media (max-width: 586px){
+    .QAbox{
+        margin: 0 auto;
+    }
+    .QAlist li > p{
+        font-size: 20px;
+        text-justify: none;
+    }
 }

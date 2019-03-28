@@ -24,15 +24,15 @@ let mySwiper = new Swiper('.swiper-container', {
     let dataContent = [
         {
             id: 1,
-            inner:'123'
+            inner:`Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia exercitationem iusto dolores cum aspernatur. Dignissimos praesentium esse eum libero, alias consectetur voluptates architecto enim doloremque aliquam distinctio fuga odit unde?`
         },
         {
             id: 2,
-            inner:'456'
+            inner:`Lorem ipsum dolor sit amet consectetur adipisicing elit. Error autem impedit tempore nisi eaque repudiandae? Temporibus deleniti fugit tempora quas officia aspernatur nemo iure cumque sunt minima ad officiis atque rem obcaecati commodi dolor, vel laudantium! Mollitia suscipit totam ullam.`
         },
         {
             id: 3,
-            inner:'789'
+            inner:`Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ipsum suscipit fuga officia numquam voluptatum excepturi porro, odit nemo adipisci et, reiciendis necessitatibus beatae minima, eius nam debitis ad aliquid vero perferendis tempora placeat nesciunt eos? Doloribus, suscipit ducimus. Enim.`
         }
     ]
 
@@ -41,9 +41,11 @@ let mySwiper = new Swiper('.swiper-container', {
             liSelector.forEach(el => {
                 el.className = ''
             })
-            el.className = 'active'
+            el.className = 'js_active'
+
             let str = dataContent[index].inner
             datalist.innerHTML = `<p>${str}</p>`
+
         })
     })
 
