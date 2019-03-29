@@ -154,7 +154,7 @@ header > ul > li:hover{
 }
 
 .newsBar ul{
-    margin: 20px 70px;
+    margin: 20px 70px 0 70px;
     float: left;
     text-align: center;
     line-height: 40px;
@@ -198,12 +198,13 @@ li.js_active{
 
 @media (max-width: 568px){
     .newsBar ul{
-        margin: 10px 0;
+        margin: 0;
         width: 100%;
     }
     .newsBar li{
         width: 25%;
     }
+
 }
 
 footer{
@@ -322,6 +323,11 @@ footer p{
     margin-left: 70%;
     display: block;
 }
+textarea{
+    width: 80%;
+    margin: 0 auto;
+    height: 150px;
+}
 
 @media (max-width: 586px){
     .QAbox{
@@ -330,5 +336,29 @@ footer p{
     .QAlist li > p{
         font-size: 20px;
         text-justify: none;
+    }
+    .QAwrite{
+        height: auto;
+        text-align:center;
+        font-size: 16px;
+    }
+    .inputset{
+        width: 100%;
+    }
+    .QAwrite input{
+        width: 100%;
+    }
+    #twofont-input{
+        width: 25% !important;
+    }
+    #threefont-input{
+        width: 33% !important;
+    }
+    textarea{
+        width: 100%;
+    }
+    #sub{
+        margin-left: 80%;
+        font-size: 16px !important;
     }
 }
